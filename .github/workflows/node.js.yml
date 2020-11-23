@@ -34,7 +34,7 @@ jobs:
           name: webpack artifacts
           path: public/
         npm install
-        npm run build
+    needs: build
 
   test:
     runs-on: ubuntu-latest
