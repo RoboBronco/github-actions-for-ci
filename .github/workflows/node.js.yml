@@ -51,4 +51,7 @@ jobs:
         npm test
       env:
         CI: true
-
+    - uses: actions/upload-artifact@master
+      with:
+        name: webpack artifacts
+        path: public/
